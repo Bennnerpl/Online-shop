@@ -1,0 +1,856 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+   border-collapse: collapse;
+}
+input {
+    outline: none;
+}
+.container {
+    width: 1111px;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    margin: 5px 0;
+}
+/*
+///////////////////////
+header
+///////////////////////
+*/
+.wrapper {
+    background-color: white;
+}
+.wrapper-header {
+    background-color: #F9F6F1;
+}
+.header {
+    display: flex;
+    overflow: visible;
+}
+.navbar {
+    display: flex;
+    gap: 1.04vw;
+    margin-top: 5vh;
+    align-items: center; 
+}
+.navbar-right {
+    display: flex;
+    gap: 2vw;
+    margin-left: auto;
+    margin-right: 4.6vw;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 13px;
+}
+.menu-list {
+    display: flex;
+    gap: 2vw;
+    margin-right: 4.5vw;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 13px;
+}
+.menu-item {
+position: relative;
+top: 3.4vh;
+}
+.menu-item:hover .for-man-list {
+opacity: 1;
+transform: translateY(50%);
+transition: 0.25s ease;
+}
+.for-man-list {
+   opacity: 0;
+ text-decoration: none;
+}
+.for-woman-list {
+    opacity: 0;
+}
+.menu-item:hover .for-woman-list {
+    opacity: 1;
+    transform: translateY(50%);
+    transition: 0.25s ease;
+}
+.for-kid-list {
+   opacity: 0;
+}
+.menu-item:hover .for-kid-list {
+    opacity: 1;
+    transform: translateY(50%);
+    transition: 0.25s ease;
+}
+.logo {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 4.5vw;
+}
+.name-company {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+.arrow-down-navbar {
+    height: 0.8vh;
+    width: 0.3vw;
+}
+.menu-item:hover .arrow-down-navbar {  
+    transform: scaleY(-1);
+}
+.total-basket-cart{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.item-carts {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 1.6vw;
+}
+/*
+///////////////////////
+first-screen
+///////////////////////
+*/
+.wrapper-first-screen {
+    background-color: #F9F6F1;
+}
+.first-screen {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10vh;
+  margin-top: 15vh;
+}
+.group-text-first-screen {
+align-items: center;
+width: 28.3vw;
+}
+.winter-sale {
+    font-family: Montserrat;
+    font-weight: regular;
+    font-size: 1.5em;
+    margin-bottom: 2vh;
+}
+.action-90 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 4vh;
+}
+.btn-more {
+width: 240px;
+height: 55px;
+background-color: #D7B399;
+border: none;
+}
+.btn-more:hover {
+    background-color: #F1DDCE;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.more-info {
+    font-family: Montserrat;
+    font-weight: light;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 4vh;
+}
+.first-screen-image {
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.first-screen-image img {
+    width: 100%;
+    height: auto;
+}
+/*
+///////////////////////
+gap-wrap
+///////////////////////
+*/
+.gap-wrap-body {
+    background-color: #212121;
+    display: flex;
+    min-height: 25vh;
+}
+.delivery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+  
+}
+.free-delivery {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+.price-for-delivery {
+    font-weight: normal;
+}
+.come-to-order {
+    font-family: Montserrat;
+    font-weight: light;
+    font-size: 1em;
+    color: rgba(240, 234, 234, 0.822);
+}
+/*
+///////////////////////
+man-woman-collection
+///////////////////////
+*/
+.man-woman-colltection {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+.wrap-collection {
+    background: linear-gradient(to right, #F9F6F1 50%, #f4f4f4 50%);
+}
+.man-collection {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+}
+.collect {
+   font-weight: normal;
+}
+.explanation {
+    font-family: Montserrat;
+    font-weight: light;
+    font-size: 1em;
+    color: black;
+    margin-bottom: 6vh;
+}
+.go-to-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #D7B399;
+}
+.go-to-btn:hover {
+    background-color: #F1DDCE;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+/*
+///////////////////////
+chest-item
+///////////////////////
+*/
+.wrap-chest {
+    background-color: white; 
+}
+.chest-range{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-shirt {
+    display: flex;
+    float: right;
+}
+.name-shirt {
+    position: absolute;
+    margin-top: 7vw;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: light;
+    cursor: pointer;
+
+}
+.chest-range > div:nth-child(1) {
+    background-color: #f4f4f4;
+}
+.chest-range > div:nth-child(3) {
+    background-color: #f4f4f4;
+}
+.chest-range > div:nth-child(6) {
+    background-color: #f4f4f4;
+}
+.chest-range > div:nth-child(8) {
+    background-color: #f4f4f4;
+}
+.chest-range > div:nth-child(2) {
+    background-color: #f9f6f1;
+}
+.chest-range > div:nth-child(4) {
+    background-color: #f9f6f1;
+}
+.chest-range > div:nth-child(5) {
+    background-color: #f9f6f1;
+}
+.chest-range > div:nth-child(7) {
+    background-color: #f9f6f1;
+}
+/*
+///////////////////////
+new-models
+///////////////////////
+*/
+.warp-new-models {
+    background-color: white;
+    
+}
+.new-models-title {
+display: flex;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
+font-family: Montserrat;
+font-weight: Bold;
+font-size: 36px;
+margin-top: 5vw;
+}
+.new-models-block {
+    display: flex;
+   margin: 0 auto;
+   margin-top: 5vw;
+   gap: 25px;
+}
+.coctail {
+    font-family: Montserrat;
+    font-weight: Bold;
+    margin-bottom: 1vw;
+}
+.coctail:hover {
+    color: #D7B399;
+    transition: 0.2s ease;
+}
+.price-model {
+    font-family: Montserrat;
+    font-weight: Bold;
+   color: #D7B399;
+}
+.description-model {
+    margin-top: -4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*
+///////////////////////
+gap-wrap-body-form
+///////////////////////
+*/
+.gap-wrap-body-form {
+    background-color: #212121;
+    display: flex;
+    min-height: 17vh;
+    margin-top: 5vw;
+}
+.action-free-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.free-action {
+    margin-right: 2vw;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 1.6em;
+    color: white;
+    text-transform: uppercase; 
+}
+.email-form {
+    width: 255px;
+    height: 40px;
+    margin-right: 2vw;
+}
+.button-bb {
+    width: 185px;
+    height: 46px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #D7B399 ;
+    border: none;
+    color: white;
+    font-family: Montserrat;
+}
+.btn-more-new-models {
+    display: flex;
+    margin-top: 5vw;
+    align-items: center;
+    justify-content: center;
+
+}
+.go-to-btn-new {
+    width: 220px;
+    height: 55px;
+    background-color: #D7B399;
+    border: none;
+    font-size: 1em;
+}
+.new-models-title-btn {
+    color: white;
+    font-family: Montserrat;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+/*
+///////////////////////
+footer
+///////////////////////
+*/
+footer {
+    margin-top: 5vw;
+}
+.wrap-footer {
+    background-color: #212121;
+    display: flex;
+}
+.logo-footer-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+.name-company-footer {
+    display: flex;
+    align-items: center;
+    color: white;
+   font-family: Montserrat;
+   font-weight: 600;
+
+}
+.logo-footer {
+    margin-right: 1em;
+}
+.description-company-foter {
+    display: flex;
+    max-width: 10vw;
+    align-items: center;
+    justify-content: center;
+    color: rgba(240, 234, 234, 0.822);
+    line-height: 1vw;
+}
+.navbar-footer {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3vw;
+    margin-left: 3vw;
+}   
+.navbar-list-footer {
+    display: flex;
+    gap: 4vw;
+    color: white;
+}
+.basic-item {
+    margin-top: 0.5vw;
+}
+.basic-link {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(240, 234, 234, 0.822);
+}
+.img-footer-social {
+    margin-right: 0.8vh;
+}
+.burger-menu {
+    opacity: 0;
+}
+.burger-menu > img {
+    opacity: 1;
+    height: 30px;
+    width: 30px;
+ }
+ .menu-list.active  {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: 0.25s ease-in-out;
+    
+}
+/*
+///////////////////////
+media-adaptive адаптив сайта
+///////////////////////
+*/
+@media (min-width: 319.98px) and (max-width: 575px) {         
+    .container {
+      max-width: 290px;
+        overflow: hidden;
+      justify-content: center;
+    }
+    .burger-menu {
+        opacity: 1;
+     }
+    .menu-list {
+        opacity: 0;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        transform: translateX(-150%);
+       margin: 0;
+       gap: 0px;
+       font-size: 12px;
+    }
+   .for-man-item {
+    visibility: hidden;
+   }
+   .for-man-list {
+    visibility: hidden;
+   }
+    .menu-item:hover .for-man-list {
+        visibility: hidden;
+
+    }
+    .navbar-right {
+        visibility: hidden;
+    }
+    .basket-shop-cart {
+        visibility: hidden;
+    }
+    .total-basket-cart {
+        visibility: hidden;
+    }
+    .navbar {
+        margin-top:0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .first-screen {
+        margin-top: 2vh;
+    }
+    .first-screen-image {
+       visibility: hidden;
+    }
+    .delivery-container {
+        font-size: 13px;
+    }
+    .man-woman-colltection {
+        flex-direction: column-reverse;
+    }
+    .wrap-collection {
+        background:linear-gradient(to bottom, #f4f4f4 50%, #F9F6F1 50%);
+    }
+    .group-text-first-screen {
+        width: 49.3vw;
+    }
+    .img-shirt {
+        width: 320px;
+    }
+    .chest-range > div:nth-child(5) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(6) {
+        background-color: #f9f6f1;
+    }
+    .description-company-foter {
+        max-width: 124vw;
+        line-height: 3vw;
+    }
+    .new-models-block {
+        flex-direction: column;
+    }
+    .action-free-cont {
+        flex-direction: column;
+        font-size: 12px;
+    }
+   .navbar-list-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-left: -209px;
+    margin-top: 34vw;
+   }
+   .logo-footer-cont {
+    align-items: center;
+   }
+   .description-company-foter {
+    line-height: 6vw;
+    text-align: center;
+   }
+   .name-shirt {
+    margin-top: 32vw;
+   }
+   .free-action {
+    font-size: 15px;
+   }
+   .email-form {
+    width: 152px;
+    height: 27px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.button-bb {
+    width: 139px;
+    height: 33px;
+}
+}
+
+@media (min-width: 575.98px) and (max-width: 767px){
+    .container {
+      max-width: 545px;
+        overflow: hidden;
+      justify-content: center;
+    }
+    .burger-menu {
+        opacity: 1;
+     }
+    .menu-list {
+        opacity: 0;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        transform: translateX(-150%);
+       margin: 0;
+       gap: 0px;
+       font-size: 12px;
+    }
+   .for-man-item {
+    visibility: hidden;
+   }
+   .for-man-list {
+    visibility: hidden;
+   }
+    .menu-item:hover .for-man-list {
+        visibility: hidden;
+
+    }
+    .navbar-right {
+        visibility: hidden;
+    }
+    .basket-shop-cart {
+        visibility: hidden;
+    }
+    .total-basket-cart {
+        visibility: hidden;
+    }
+    .navbar {
+        margin-top:0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .first-screen {
+        margin-top: 2vh;
+    }
+    .first-screen-image {
+        width: 240px;
+    }
+    .group-text-first-screen {
+        width: 49.3vw;
+    }
+    .img-shirt {
+        width: 270px;
+    }
+    .chest-range > div:nth-child(3) {
+        background-color: #f9f6f1;
+    }
+    .chest-range > div:nth-child(1) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(4) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(5) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(6) {
+        background-color: #f9f6f1;
+    }
+    .description-company-foter {
+        max-width: 124vw;
+        line-height: 3vw;
+    }
+  }
+
+  @media (min-width: 767.98px) and (max-width: 990px){
+    .container {
+      max-width: 738px;	
+      justify-content: center;
+    }
+    .first-screen-image {
+        width: 390px;
+    }
+    .group-text-first-screen {
+        width: 30vw;
+    }
+    .img-shirt {
+        width: 369px;
+        align-items: center;
+        justify-content: center;
+    }
+    .name-shirt {
+        float: left;
+        margin-left: -24vw;
+    }
+    .chest-range > div:nth-child(3) {
+        background-color: #f9f6f1;
+    }
+    .chest-range > div:nth-child(1) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(4) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(5) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(6) {
+        background-color: #f9f6f1;
+    }
+    .new-models-block {
+        flex-wrap: wrap;
+        width: 535px;
+    }
+    .email-form {
+        width: 152px;
+        height: 27px;
+    }
+    .button-bb {
+        width: 139px;
+        height: 33px;
+    }
+    .free-action {
+        margin-right: 1vw;
+        font-size: 1.2em;
+    }
+    .description-company-foter {
+        max-width: 18vw;
+        line-height: 1.7vw;
+        margin-top: 1vw;
+    }
+    .burger-menu {
+        opacity: 0;
+     }
+     .navbar-right {
+        opacity: 1;
+    }
+  }
+ 
+  @media (min-width: 991.98px) and (max-width: 1198px){
+    .container {
+      max-width: 988px;
+      justify-content: center;
+    }
+    .img-shirt {
+        width: 494px;
+        align-items: center;
+        justify-content: center;
+    }
+    .chest-range > div:nth-child(3) {
+        background-color: #f9f6f1;
+    }
+    .chest-range > div:nth-child(1) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(4) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(5) {
+        background-color: #f4f4f4;
+    }
+    .chest-range > div:nth-child(6) {
+        background-color: #f9f6f1;
+    }
+    .name-shirt {
+        margin-top: 5vw;
+        margin-left: -16.3vh;
+    }
+    .description-company-foter {
+        line-height: 1.6vw;
+        margin-top: 1.4vw;
+    }
+    .new-models-block {
+        flex-wrap: wrap;
+        width: 535px;
+    }
+    .burger-menu {
+        opacity: 0;
+     }
+  }
+  @media (min-width: 1199.98px)  {
+    .container {
+      max-width: 1100px;
+    }
+    /*
+    firts-screen-media
+    */
+    .img-shirt {
+        width: 262px;
+    }
+    .new-models-block {
+       flex-wrap: nowrap;
+       width: auto;
+       height: 355px;
+    }
+    .burger-menu {
+        opacity: 0;
+     }
+     .navbar-right {
+        opacity: 1;
+    }
+  }
+  
